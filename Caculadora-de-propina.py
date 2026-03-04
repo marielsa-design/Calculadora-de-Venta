@@ -1,20 +1,17 @@
+# Solicitar el precio de la comida
+precio = float(input("Ingrese el precio de la comida: $"))
 
-# print("Selecciona operacion:")
-# print("1.suma")
-# print("2.resta")
-# print("3.multiplicacion")
-# print("división")
+# Determinar el porcentaje de propina
+if precio < 20:
+    propina = precio * 0.10
+elif 20 <= precio <= 50:
+    propina = precio * 0.15
+else:
+    propina = precio * 0.20
 
-nombre = input("Por favor escribe tu nombre: ").title().strip()
-precio_de_su_comida = float(input("Por favor escribe cuánto debes pagar: "))
+# Calcular el total
+total = precio + propina
 
-
-print(nombre)
-print(precio_de_su_comida)
-
-
-if False:
-    accion
-
-pagar_en_propina
-total_a_pagar
+# Mostrar resultados
+print(f"Propina: ${propina:.2f}")
+print(f"Total a pagar: ${total:.2f}")
