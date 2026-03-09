@@ -1,5 +1,6 @@
 
 # True
+
 try:
     nombre = input("Por favor escribe tu nombre: ").title().strip()
     precio_de_su_comida = float(input("por favor escribe cuanto deber pagar => "))
@@ -13,6 +14,7 @@ try:
 
     print("querio ",nombre, "Usted deber pagar",propina," de propina")
     print("por lo tanto su cuenta es de ", precio_de_su_comida+propina)
+
 except ValueError:
     print("le pedí claramente un numero")
     print("reintente de nuevo")
